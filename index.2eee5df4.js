@@ -1,0 +1,2 @@
+var e=document.querySelector(".logo"),n=document.createElement("div"),t=function(e,n){e.textContent=n,document.body.append(e)};n.className="message";var o=new Promise(function(n,t){e.addEventListener("click",function(){n("Promise was resolved!")})}),c=new Promise(function(e,n){setTimeout(function(){n(Error("Promise was rejected!"))},3e3)});o.then(function(e){t(n,e)}),c.catch(function(e){n.classList.add("error-message"),t(n,e)});
+//# sourceMappingURL=index.2eee5df4.js.map
